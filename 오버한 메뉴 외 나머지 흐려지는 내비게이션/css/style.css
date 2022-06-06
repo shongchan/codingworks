@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #222;
+  line-height: 1.5em;
+  font-weight: 300;
+  background: royalblue;
+  margin: 0;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+.gnb {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  left: 50px;
+  /* border: 1px solid red;; */
+}
+.gnb a {
+  display: block;
+  font-size: 40px;
+  margin: 30px 0;
+  color: #fff;
+  transition: 0.5s;
+}
+.gnb:hover a {
+  opacity: 0.3;
+}
+.gnb a:hover {
+  opacity: 1;
+}
+.gnb a:before {
+  content: '\f105';
+  font-family: fontawesome;
+  margin-right: 10px;
+  opacity: 0;
+}
+.gnb a:hover:before {
+  opacity: 1;
+}
