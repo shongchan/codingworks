@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="testimonial-section">
+    <h1><span>CodingWorks</span> Publishing Online Class with Inflearn</h1>
+    <div class="testimonial-pic">
+      <img class="active" src="images/face-01.jpg" alt="" data-alt="tab1">
+      <img src="images/face-02.jpg" alt="" data-alt="tab2">
+      <img src="images/face-03.jpg" alt="" data-alt="tab3">
+      <img src="images/face-04.jpg" alt="" data-alt="tab4">
+    </div>
+    <div class="testimonial">
+      <div class="content active" id="tab1">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quis magnam. Porro, quas vel distinctio eum et consequatur id nam molestias necessitatibus, ipsum corrupti enim quibusdam veniam voluptatibus asperiores sunt facere, iure minus ducimus. Quia velit, voluptatem provident mollitia vitae nesciunt modi voluptatibus incidunt omnis quibusdam dicta esse, vero error maiores eaque excepturi quasi cumque et, asperiores iste hic ex? Assumenda, nesciunt, beatae facilis quaerat, tempora eaque porro repellendus quibusdam quo cupiditate deleniti temporibus exercitationem autem dolor eveniet laudantium doloremque.
+        </p>
+        <p>
+          Sally, Web Desginer
+        </p>
+      </div>
+      <div class="content" id="tab2">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, commodi voluptas numquam quam quis aliquid. Eaque laborum, rem error quis veniam facere minus exercitationem culpa neque placeat velit nemo illo perferendis quas. Soluta voluptate provident enim quas quibusdam veritatis, molestiae esse dolores asperiores unde doloribus autem maiores ea dolorem deserunt! Corporis labore nisi debitis cupiditate, culpa maxime incidunt animi illo magnam. Accusantium autem est amet minus ab repellat veniam quam cupiditate voluptatibus dolorem mollitia, illo, voluptates deserunt odio fugiat iure.
+        </p>
+        <p>
+          Amy, Graphic Designer
+        </p>
+      </div>
+      <div class="content" id="tab3">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, esse, iste corrupti molestiae distinctio id rerum deserunt impedit facere repudiandae quas voluptas sequi aliquid! Et odio doloremque veritatis reiciendis dolorum blanditiis maxime assumenda, magni architecto quod rerum beatae soluta vero quia aliquid, nam quae optio saepe odit deleniti eligendi excepturi debitis! Quaerat, vitae voluptates delectus illo perspiciatis veritatis sit. Nulla voluptate enim tempora officia, consequuntur dolorem ab numquam, pariatur cum tempore dignissimos repellat accusamus quae exercitationem magni nemo quo non.
+        </p>
+        <p>
+          Jung Ho, Developer
+        </p>
+      </div>
+      <div class="content" id="tab4">
+        <p>
+          Lorem ipsum dolor sit amet consectetur Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora consequatur assumenda dolor saepe tenetur optio, architecto rem dicta itaque quam. Id praesentium, velit blanditiis eveniet voluptatum temporibus omnis expedita, autem vitae esse sequi sed deleniti libero quia exercitationem alias mollitia illo eum? Voluptates, aspernatur voluptatem. Reiciendis, exercitationem rem neque amet autem maiores minima similique dolorem nesciunt quisquam, doloribus illum quidem fugit repellat consectetur
+        </p>
+        <p>
+          Chris, Printing Desinger
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $('.testimonial-pic img').click(function(){
+      $(this).addClass('active')
+      $(this).siblings().removeClass('active')
+      
+      $('.testimonial .content').removeClass('active')
+      $('#'+$(this).attr('data-alt')).addClass('active')
+    })
+  </script>
+
+</body>
+</html>
