@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 body {
-  font-family: 'Raleway', sans-serif;
-  color: #222;
-  line-height: 1.5em;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #000;
+  color: #fff;
   font-weight: 300;
   margin: 0;
 }
@@ -11,3 +15,84 @@ a {
   color: #222;
   text-decoration: none;
 }
+.faq {
+  height: 100vh;
+}
+.faq-inner {
+  width: 700px;
+  margin: auto;
+}
+.faq-inner h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+}
+.accordion {
+  font-size: 26px;
+}
+.accordion .title,
+.accordion .content {
+  background-color: #303030;
+  padding: 10px 15px;
+  margin-bottom: 7px;
+}
+.accordion .title {
+  cursor: pointer;
+}
+.accordion .title:after {
+  content: '\e9c5';
+  font-family: xeicon;
+  float: right;
+  margin-top: 5px;
+  transition: 0.35s;
+}
+.accordion .title.active:after {
+  transform: rotate(45deg);
+}
+.accordion .title.active {
+  background-color: crimson;
+}
+.accordion .content {
+  display: none;
+}
+.newsletter {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+}
+.newsletter p {
+  
+}
+.newsletter div {
+  display: flex;
+}
+.newsletter div input[type=email],
+.newsletter button {
+  border: none;
+  outline: none;
+  height: 60px;
+  vertical-align: middle;
+  font-size: 20px;
+  /* margin-right: -5px; */
+}
+.newsletter div input[type=email] {
+  /* width: 70%; */
+  flex: 3;
+}
+.newsletter button {
+  background-color: #e84118;
+  color: #fff;
+  cursor: pointer;
+  /* width: 30%; */
+  flex: 1;
+}
+.newsletter button:after {
+  content: '\e93f';
+  font-family: xeicon;
+  font-size: 30px;
+  display: inline-block;
+  transform: translateY(4px);
+}
+
+/* Nextflix FAQ with jQuery */
