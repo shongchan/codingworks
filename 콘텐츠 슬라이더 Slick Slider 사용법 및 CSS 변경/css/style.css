@@ -1,0 +1,37 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: pink;
+  color: #222;
+  font-weight: 300;
+  margin: 0;
+  outline: none;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+.myslider {
+  width: 800px;
+  margin: auto;
+}
+.myslider div {
+  border: 1px solid #000;
+  height: 300px;
+  background-color: #ddd;
+  font-size: 30px;
+}
+.myslider .slick-arrow {
+  /* display: none !important; */
+}
+.myslider .slick-dots {
+  /* display: none !important; */
+  bottom: 0;
+}
+@media (max-width: 768px) {
+  .myslider {
+    width: 100%;
+  }
+}
